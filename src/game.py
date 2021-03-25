@@ -1,4 +1,4 @@
-/import logging
+import logging
 from minimax.patate import Patate
 from minimax.minimax import Minimax
 from minimax.smartminimax import SmartMinimax
