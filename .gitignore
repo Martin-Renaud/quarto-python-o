@@ -1,1 +1,3 @@
 /src/game.log
+/src/__pycache__/
+/src/minimax/__pycache__/
