@@ -11,7 +11,7 @@ class Game:
 
     def configure(self):
         logging.basicConfig(filename='game.log',filemode='w', format="%(asctime)s %(levelname)s %(name)s %(message)s",
-                            level=logging.DEBUG)
+                            level=logging.INFO)
         logging.info('Logging module initialized.')
 
     def start(self):
@@ -19,6 +19,7 @@ class Game:
         result = ()
         p1 = SmartMinimax("Player 1")
         p2 = SmartMinimax("Player 2")
+
         remaining_pieces = create_listofpieces()
         piece_to_place = remaining_pieces.pop()
         active_player = p1
