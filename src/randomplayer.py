@@ -2,7 +2,6 @@ from context import TurnContext
 from player import Player
 import random
 
-
 class RandomPlayer(Player):
 
     def __init__(self, name):

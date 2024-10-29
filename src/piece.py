@@ -1,6 +1,7 @@
 class Piece:
     """ Represent a Quarto piece and the state of all its attributes.
     """
+
     def __init__(self, v0, v1, v2, v3):
         # TODO: Prevent creation of Piece instances outside this class/module.
         self.values = (v0, v1, v2, v3)
@@ -38,13 +39,13 @@ PFFTF = Piece(False, False, True, False)
 PFFFT = Piece(False, False, False, True)
 PFFFF = Piece(False, False, False, False)
 
-
 MASTER_SET = {
     PTTTT, PTTTF, PTTFT, PTTFF,
     PTFTT, PTFTF, PTFFT, PTFFF,
     PFTTT, PFTTF, PFTFT, PFTFF,
     PFFTT, PFFTF, PFFFT, PFFFF
 }
+
 
 def create_listofpieces():
     return list(MASTER_SET)
